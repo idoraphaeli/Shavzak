@@ -1,0 +1,13 @@
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\Shavzak\obj\Debug\Shavzak.csproj.AssemblyReference.cache
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\Shavzak\obj\Debug\Shavzak.MainForm.resources
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\Shavzak\obj\Debug\Shavzak.Properties.Resources.resources
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\Shavzak\obj\Debug\Shavzak.csproj.GenerateResource.cache
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\Shavzak\obj\Debug\Shavzak.csproj.CoreCompileInputs.cache
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\Shavzak\bin\Debug\Shavzak.exe.config
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\Shavzak\bin\Debug\Shavzak.exe
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\Shavzak\bin\Debug\Shavzak.pdb
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\Shavzak\obj\Debug\Shavzak.exe
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\Shavzak\obj\Debug\Shavzak.pdb
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\Shavzak\obj\Debug\Shavzak.exe.config
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\Shavzak\bin\Debug\soldier-icon.ico
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\Shavzak\obj\Debug\Shavzak.startForm.resources
