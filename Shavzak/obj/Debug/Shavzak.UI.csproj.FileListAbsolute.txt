@@ -13,4 +13,7 @@ C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\b
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\bin\Debug\Shavzak.Logic.pdb
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\bin\Debug\Shavzak.Logic.dll.config
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.UI.csproj.Up2Date
-C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.SoldierForm.resources
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.SoldiersListForm.resources
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.BaseForm.resources
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.NewSoldier.resources
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.exe.config

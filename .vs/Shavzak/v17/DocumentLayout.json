@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C0EF5B0E-E9F7-4258-9428-3E7BEF178DD6}|Shavzak.Logic\\Shavzak.Logic.csproj|c:\\users\\ido01\\desktop\\ido private\\computer science\\shavzak\\shavzakgit\\shavzak.logic\\deployment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0EF5B0E-E9F7-4258-9428-3E7BEF178DD6}|Shavzak.Logic\\Shavzak.Logic.csproj|solutionrelative:shavzak.logic\\deployment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C52841F6-4009-4801-9808-CF23F9956CF0}|Shavzak\\Shavzak.UI.csproj|c:\\users\\ido01\\desktop\\ido private\\computer science\\shavzak\\shavzakgit\\shavzak\\newsoldier.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C52841F6-4009-4801-9808-CF23F9956CF0}|Shavzak\\Shavzak.UI.csproj|solutionrelative:shavzak\\newsoldier.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0EF5B0E-E9F7-4258-9428-3E7BEF178DD6}|Shavzak.Logic\\Shavzak.Logic.csproj|c:\\users\\ido01\\desktop\\ido private\\computer science\\shavzak\\shavzakgit\\shavzak.logic\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0EF5B0E-E9F7-4258-9428-3E7BEF178DD6}|Shavzak.Logic\\Shavzak.Logic.csproj|solutionrelative:shavzak.logic\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C52841F6-4009-4801-9808-CF23F9956CF0}|Shavzak\\Shavzak.UI.csproj|c:\\users\\ido01\\desktop\\ido private\\computer science\\shavzak\\shavzakgit\\shavzak\\newsoldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C52841F6-4009-4801-9808-CF23F9956CF0}|Shavzak\\Shavzak.UI.csproj|solutionrelative:shavzak\\newsoldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0EF5B0E-E9F7-4258-9428-3E7BEF178DD6}|Shavzak.Logic\\Shavzak.Logic.csproj|c:\\users\\ido01\\desktop\\ido private\\computer science\\shavzak\\shavzakgit\\shavzak.logic\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0EF5B0E-E9F7-4258-9428-3E7BEF178DD6}|Shavzak.Logic\\Shavzak.Logic.csproj|solutionrelative:shavzak.logic\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C52841F6-4009-4801-9808-CF23F9956CF0}|Shavzak\\Shavzak.UI.csproj|c:\\users\\ido01\\desktop\\ido private\\computer science\\shavzak\\shavzakgit\\shavzak\\baseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C52841F6-4009-4801-9808-CF23F9956CF0}|Shavzak\\Shavzak.UI.csproj|solutionrelative:shavzak\\baseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0EF5B0E-E9F7-4258-9428-3E7BEF178DD6}|Shavzak.Logic\\Shavzak.Logic.csproj|c:\\users\\ido01\\desktop\\ido private\\computer science\\shavzak\\shavzakgit\\shavzak.logic\\constraint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0EF5B0E-E9F7-4258-9428-3E7BEF178DD6}|Shavzak.Logic\\Shavzak.Logic.csproj|solutionrelative:shavzak.logic\\constraint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C52841F6-4009-4801-9808-CF23F9956CF0}|Shavzak\\Shavzak.UI.csproj|c:\\users\\ido01\\desktop\\ido private\\computer science\\shavzak\\shavzakgit\\shavzak\\baseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C52841F6-4009-4801-9808-CF23F9956CF0}|Shavzak\\Shavzak.UI.csproj|solutionrelative:shavzak\\baseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0EF5B0E-E9F7-4258-9428-3E7BEF178DD6}|Shavzak.Logic\\Shavzak.Logic.csproj|c:\\users\\ido01\\desktop\\ido private\\computer science\\shavzak\\shavzakgit\\shavzak.logic\\mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0EF5B0E-E9F7-4258-9428-3E7BEF178DD6}|Shavzak.Logic\\Shavzak.Logic.csproj|solutionrelative:shavzak.logic\\mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C52841F6-4009-4801-9808-CF23F9956CF0}|Shavzak\\Shavzak.UI.csproj|c:\\users\\ido01\\desktop\\ido private\\computer science\\shavzak\\shavzakgit\\shavzak\\startform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C52841F6-4009-4801-9808-CF23F9956CF0}|Shavzak\\Shavzak.UI.csproj|solutionrelative:shavzak\\startform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0EF5B0E-E9F7-4258-9428-3E7BEF178DD6}|Shavzak.Logic\\Shavzak.Logic.csproj|c:\\users\\ido01\\desktop\\ido private\\computer science\\shavzak\\shavzakgit\\shavzak.logic\\platoon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0EF5B0E-E9F7-4258-9428-3E7BEF178DD6}|Shavzak.Logic\\Shavzak.Logic.csproj|solutionrelative:shavzak.logic\\platoon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C52841F6-4009-4801-9808-CF23F9956CF0}|Shavzak\\Shavzak.UI.csproj|C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\shavzak\\startform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C52841F6-4009-4801-9808-CF23F9956CF0}|Shavzak\\Shavzak.UI.csproj|solutionrelative:shavzak\\startform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C52841F6-4009-4801-9808-CF23F9956CF0}|Shavzak\\Shavzak.UI.csproj|c:\\users\\ido01\\desktop\\ido private\\computer science\\shavzak\\shavzakgit\\shavzak\\soldierform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C52841F6-4009-4801-9808-CF23F9956CF0}|Shavzak\\Shavzak.UI.csproj|solutionrelative:shavzak\\soldierform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C52841F6-4009-4801-9808-CF23F9956CF0}|Shavzak\\Shavzak.UI.csproj|c:\\users\\ido01\\desktop\\ido private\\computer science\\shavzak\\shavzakgit\\shavzak\\newsoldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C52841F6-4009-4801-9808-CF23F9956CF0}|Shavzak\\Shavzak.UI.csproj|solutionrelative:shavzak\\newsoldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +38,96 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Deployment.cs",
-              "DocumentMoniker": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak.Logic\\Deployment.cs",
-              "RelativeDocumentMoniker": "Shavzak.Logic\\Deployment.cs",
-              "ToolTip": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak.Logic\\Deployment.cs",
-              "RelativeToolTip": "Shavzak.Logic\\Deployment.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAqwBkAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "StartForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak\\StartForm.Designer.cs",
+              "RelativeDocumentMoniker": "Shavzak\\StartForm.Designer.cs",
+              "ToolTip": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak\\StartForm.Designer.cs",
+              "RelativeToolTip": "Shavzak\\StartForm.Designer.cs",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAAAOkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:56:21.729Z",
+              "WhenOpened": "2025-06-28T23:03:09.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Constraint.cs",
-              "DocumentMoniker": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak.Logic\\Constraint.cs",
-              "RelativeDocumentMoniker": "Shavzak.Logic\\Constraint.cs",
-              "ToolTip": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak.Logic\\Constraint.cs",
-              "RelativeToolTip": "Shavzak.Logic\\Constraint.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBoAAAAmAAAAAAAAAA==",
+              "Title": "BaseForm.cs",
+              "DocumentMoniker": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak\\BaseForm.cs",
+              "RelativeDocumentMoniker": "Shavzak\\BaseForm.cs",
+              "ToolTip": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak\\BaseForm.cs",
+              "RelativeToolTip": "Shavzak\\BaseForm.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAD4vxkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:46:58.408Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Soldier.cs",
-              "DocumentMoniker": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak.Logic\\Soldier.cs",
-              "RelativeDocumentMoniker": "Shavzak.Logic\\Soldier.cs",
-              "ToolTip": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak.Logic\\Soldier.cs",
-              "RelativeToolTip": "Shavzak.Logic\\Soldier.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:26:40.712Z",
+              "WhenOpened": "2025-06-28T22:54:18.159Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Company.cs",
-              "DocumentMoniker": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak.Logic\\Company.cs",
-              "RelativeDocumentMoniker": "Shavzak.Logic\\Company.cs",
-              "ToolTip": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak.Logic\\Company.cs",
-              "RelativeToolTip": "Shavzak.Logic\\Company.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAqwBQAAAAJAAAAAAAAAA==",
+              "Title": "BaseForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak\\BaseForm.cs",
+              "RelativeDocumentMoniker": "Shavzak\\BaseForm.cs",
+              "ToolTip": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak\\BaseForm.cs [Design]",
+              "RelativeToolTip": "Shavzak\\BaseForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:22:16.03Z",
+              "WhenOpened": "2025-06-28T22:54:12.348Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NewSoldier.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak\\NewSoldier.Designer.cs",
+              "RelativeDocumentMoniker": "Shavzak\\NewSoldier.Designer.cs",
+              "ToolTip": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak\\NewSoldier.Designer.cs",
+              "RelativeToolTip": "Shavzak\\NewSoldier.Designer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T22:22:30.536Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Platoon.cs",
-              "DocumentMoniker": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak.Logic\\Platoon.cs",
-              "RelativeDocumentMoniker": "Shavzak.Logic\\Platoon.cs",
-              "ToolTip": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak.Logic\\Platoon.cs",
-              "RelativeToolTip": "Shavzak.Logic\\Platoon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "NewSoldier.cs",
+              "DocumentMoniker": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak\\NewSoldier.cs",
+              "RelativeDocumentMoniker": "Shavzak\\NewSoldier.cs",
+              "ToolTip": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak\\NewSoldier.cs",
+              "RelativeToolTip": "Shavzak\\NewSoldier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:21:35.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MIssion.cs",
-              "DocumentMoniker": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak.Logic\\MIssion.cs",
-              "RelativeDocumentMoniker": "Shavzak.Logic\\MIssion.cs",
-              "ToolTip": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak.Logic\\MIssion.cs",
-              "RelativeToolTip": "Shavzak.Logic\\MIssion.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:20:31.017Z",
+              "WhenOpened": "2025-06-28T22:00:57.729Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "SoldierForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak\\SoldierForm.cs",
-              "RelativeDocumentMoniker": "Shavzak\\SoldierForm.cs",
-              "ToolTip": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak\\SoldierForm.cs [Design]",
-              "RelativeToolTip": "Shavzak\\SoldierForm.cs [Design]",
+              "Title": "NewSoldier.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak\\NewSoldier.cs",
+              "RelativeDocumentMoniker": "Shavzak\\NewSoldier.cs",
+              "ToolTip": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak\\NewSoldier.cs [Design]",
+              "RelativeToolTip": "Shavzak\\NewSoldier.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:06:31.538Z",
+              "WhenOpened": "2025-06-28T22:00:50.706Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StartForm.cs",
+              "DocumentMoniker": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak\\StartForm.cs",
+              "RelativeDocumentMoniker": "Shavzak\\StartForm.cs",
+              "ToolTip": "C:\\Users\\ido01\\Desktop\\Ido private\\Computer science\\Shavzak\\ShavzakGit\\Shavzak\\StartForm.cs",
+              "RelativeToolTip": "Shavzak\\StartForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T21:53:47.751Z",
+              "EditorCaption": ""
             }
           ]
         }

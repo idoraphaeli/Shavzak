@@ -11,16 +11,13 @@ using System.Windows.Forms;
 
 namespace Shavzak
 {
-    public partial class SoldierForm : Form
+    public partial class NewSoldier : BaseForm
     {
         private Soldier currentSoldier;
 
-        public SoldierForm()
+        public NewSoldier()
         {
             InitializeComponent();
-            this.Icon = new Icon("soldier-icon.ico");
-            this.StartPosition = FormStartPosition.CenterScreen;
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -57,6 +54,26 @@ namespace Shavzak
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NewSoldier_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void NewSoldier_Resize(object sender, EventArgs e)
+        {
+            if (AddNewSoldierTitle != null)
+            {
+                AddNewSoldierTitle.Width = this.ClientSize.Width - 50;
+                AddNewSoldierTitle.Height = (int)(this.ClientSize.Height * 0.1);
+                AddNewSoldierTitle.Left = (this.ClientSize.Width - AddNewSoldierTitle.Width) / 2;
+                AddNewSoldierTitle.Top = 20; // Adjust the top position as needed
+            }
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
         {
 
         }

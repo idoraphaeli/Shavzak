@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Shavzak
 {
-    public partial class StartForm : Form
+    public partial class StartForm : BaseForm
     {
         public StartForm()
         {
@@ -49,7 +49,6 @@ namespace Shavzak
         private void startForm_Load(object sender, EventArgs e)
         {
             this.StartForm_Resize(sender, e);
-            this.MinimumSize = new Size(350, 470);
         }
 
         private void btnSoldiers_Click(object sender, EventArgs e)
@@ -67,7 +66,8 @@ namespace Shavzak
 
         private void addNewSoldierToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var form = new NewSoldier();
+            form.Show();
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
@@ -132,7 +132,7 @@ namespace Shavzak
         private void SoldiersPhoto_Resize(object sender, EventArgs e)
         {
             SoldiersPhoto.Width = this.ClientSize.Width;
-            SoldiersPhoto.Height = (int)(this.ClientSize.Height / 2.7);
+            SoldiersPhoto.Height = (int)(this.ClientSize.Height / 2.9);
             SoldiersPhoto.Left = 0;
             SoldiersPhoto.Top = 30;
         }

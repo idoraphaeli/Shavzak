@@ -58,7 +58,7 @@
             this.btnSoldiers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.btnSoldiers.Location = new System.Drawing.Point(110, 273);
             this.btnSoldiers.Name = "btnSoldiers";
-            this.btnSoldiers.Size = new System.Drawing.Size(431, 50);
+            this.btnSoldiers.Size = new System.Drawing.Size(464, 50);
             this.btnSoldiers.TabIndex = 0;
             this.btnSoldiers.Text = "Soldiers";
             this.btnSoldiers.UseVisualStyleBackColor = true;
@@ -73,7 +73,7 @@
             this.removeSoldierToolStripMenuItem,
             this.searchSoldierToolStripMenuItem});
             this.SoldierOptions.Name = "contextMenuStrip1";
-            this.SoldierOptions.Size = new System.Drawing.Size(198, 100);
+            this.SoldierOptions.Size = new System.Drawing.Size(211, 128);
             this.SoldierOptions.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // showSoldiersListToolStripMenuItem
@@ -112,7 +112,7 @@
             this.btnMissions.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.btnMissions.Location = new System.Drawing.Point(110, 341);
             this.btnMissions.Name = "btnMissions";
-            this.btnMissions.Size = new System.Drawing.Size(431, 50);
+            this.btnMissions.Size = new System.Drawing.Size(464, 50);
             this.btnMissions.TabIndex = 1;
             this.btnMissions.Text = "Missions";
             this.btnMissions.UseVisualStyleBackColor = true;
@@ -125,7 +125,7 @@
             this.btnBuildShavzak.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.btnBuildShavzak.Location = new System.Drawing.Point(110, 204);
             this.btnBuildShavzak.Name = "btnBuildShavzak";
-            this.btnBuildShavzak.Size = new System.Drawing.Size(431, 50);
+            this.btnBuildShavzak.Size = new System.Drawing.Size(464, 50);
             this.btnBuildShavzak.TabIndex = 2;
             this.btnBuildShavzak.Text = "Build Shavzak!";
             this.btnBuildShavzak.UseVisualStyleBackColor = true;
@@ -138,7 +138,7 @@
             this.btnDownload.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.btnDownload.Location = new System.Drawing.Point(110, 419);
             this.btnDownload.Name = "btnDownload";
-            this.btnDownload.Size = new System.Drawing.Size(431, 50);
+            this.btnDownload.Size = new System.Drawing.Size(464, 50);
             this.btnDownload.TabIndex = 3;
             this.btnDownload.Text = "Download Status";
             this.btnDownload.UseVisualStyleBackColor = true;
@@ -187,7 +187,7 @@
             this.SoldiersPhoto.Image = ((System.Drawing.Image)(resources.GetObject("SoldiersPhoto.Image")));
             this.SoldiersPhoto.Location = new System.Drawing.Point(0, 29);
             this.SoldiersPhoto.Name = "SoldiersPhoto";
-            this.SoldiersPhoto.Size = new System.Drawing.Size(630, 220);
+            this.SoldiersPhoto.Size = new System.Drawing.Size(663, 220);
             this.SoldiersPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SoldiersPhoto.TabIndex = 5;
             this.SoldiersPhoto.TabStop = false;
@@ -198,7 +198,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 592);
             this.Controls.Add(this.SoldiersPhoto);
             this.Controls.Add(this.btnDownload);
             this.Controls.Add(this.btnBuildShavzak);
