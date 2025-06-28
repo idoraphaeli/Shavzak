@@ -2,7 +2,7 @@
 
 namespace Shavzak
 {
-    partial class MainForm
+    partial class SoldierForm
     {
         /// <summary>
         /// Required designer variable.

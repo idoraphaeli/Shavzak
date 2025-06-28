@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace Shavzak
 {
-    public partial class MainForm : Form
+    public partial class SoldierForm : Form
     {
         private Soldier currentSoldier;
 
-        public MainForm()
+        public SoldierForm()
         {
             InitializeComponent();
             this.Icon = new Icon("soldier-icon.ico");
