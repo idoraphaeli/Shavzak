@@ -1,7 +1,7 @@
-C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak.Logic\obj\Debug\Shavzak.Logic.csproj.AssemblyReference.cache
-C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak.Logic\obj\Debug\Shavzak.Logic.csproj.CoreCompileInputs.cache
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak.Logic\bin\Debug\Shavzak.Logic.dll.config
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak.Logic\bin\Debug\Shavzak.Logic.dll
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak.Logic\bin\Debug\Shavzak.Logic.pdb
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak.Logic\obj\Debug\Shavzak.Logic.csproj.AssemblyReference.cache
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak.Logic\obj\Debug\Shavzak.Logic.csproj.CoreCompileInputs.cache
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak.Logic\obj\Debug\Shavzak.Logic.dll
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak.Logic\obj\Debug\Shavzak.Logic.pdb

@@ -3,77 +3,38 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Shavzak.Logic.Constraint;
+using static Shavzak.Soldier;
+
 
 namespace Shavzak
 {
     public partial class NewSoldier : BaseForm
     {
-        private Soldier currentSoldier;
-
         public NewSoldier()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            string fullName = textBox1.Text;
+            Role selectedRole = (Role)comboBox1.SelectedItem;
+            ConstraintType selectedConstraint = (ConstraintType)comboBox2.SelectedItem;
+            PlatoonNumber PlatoonNum = (PlatoonNumber)comboBox3.SelectedItem;
 
-        }
+            Soldier newSoldier = new Soldier(fullName, selectedRole, selectedConstraint, PlatoonNum);
+            
+            MessageBox.Show($"Created soldier:\nName: {newSoldier.FullName}\nRole: {newSoldier.SoldierRole}\nConstraint: {newSoldier.Constraint} \n Platoon Number: {newSoldier.PlatoonNum}");
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            Text = "Shavzak";
-            Image defaultImage = Properties.Resources.soldier_icon;
-            picSoldier.Image = CreateCircularImage(defaultImage);
-            picSoldier.SizeMode = PictureBoxSizeMode.Zoom;
-        }
-
-        private Image CreateCircularImage(Image original)
-        {
-            Bitmap circularImage = new Bitmap(original.Width, original.Height);
-            using (Graphics g = Graphics.FromImage(circularImage))
-            {
-                using (Brush brush = new TextureBrush(original))
-                {
-                    GraphicsPath path = new GraphicsPath();
-                    path.AddEllipse(0, 0, original.Width, original.Height);
-                    g.FillPath(brush, path);
-                }
-            }
-            return circularImage;
-        }
-
-        private void picSoldier_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
 
         private void NewSoldier_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void NewSoldier_Resize(object sender, EventArgs e)
-        {
-            if (AddNewSoldierTitle != null)
-            {
-                AddNewSoldierTitle.Width = this.ClientSize.Width - 50;
-                AddNewSoldierTitle.Height = (int)(this.ClientSize.Height * 0.1);
-                AddNewSoldierTitle.Left = (this.ClientSize.Width - AddNewSoldierTitle.Width) / 2;
-                AddNewSoldierTitle.Top = 20; // Adjust the top position as needed
-            }
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
         {
 
         }

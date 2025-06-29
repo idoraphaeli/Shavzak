@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Shavzak.Logic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Shavzak.Logic.Constraint;
 
 namespace Shavzak
 {
@@ -10,13 +12,15 @@ namespace Shavzak
     {
         public string FullName { get; set; }
         public Role SoldierRole { get; set; }
-        public List<string> Constraints { get; set; }
+        public ConstraintType Constraint { get; set; }
+        public PlatoonNumber PlatoonNum { get; set; }
 
-        public Soldier(string fullName, Role role = Role.Fighter)
+        public Soldier(string fullName, Role role = Role.Fighter, ConstraintType constraint = ConstraintType.None, PlatoonNumber platoonNumber = PlatoonNumber.Headquarters)
         {
             FullName = fullName;
             SoldierRole = role;
-            Constraints = new List<string>();
+            Constraint = constraint;
+            PlatoonNum = platoonNumber;
         }
 
         public override string ToString()
@@ -26,16 +30,24 @@ namespace Shavzak
 
         public enum Role
         {
-            Driver,                 // נהג
             Fighter,                // לוחם
             Medic,                  // חובש
-            SquadCommander,         // מפקד כיתה
+            Driver,                 // נהג
+            Squad_Commander,         // מפקד כיתה
             Sergeant,               // סמל
-            PlatoonCommander,       // מפקד מחלקה
-            DeputyLogisticsSergeant,// סרס"פ
-            LogisticsSergeant,      // רס"פ
-            DeputyCompanyCommander, // סמ"פ
-            CompanyCommander        // מ"פ
+            Platoon_Commander,       // מפקד מחלקה
+            Deputy_Logistics_Sergeant,// סרס"פ
+            Logistics_Sergeant,      // רס"פ
+            Deputy_Company_Commander, // סמ"פ
+            Company_Commander        // מ"פ
+        }
+
+        public enum PlatoonNumber
+        {
+            One = 1,
+            Two = 2,
+            Three = 3,
+            Headquarters = 4
         }
     }
 

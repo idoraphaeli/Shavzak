@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace Shavzak.Logic
 {
-    internal class Company
+    public class Company
     {
-        private List<Platoon> platoons;
+        private List<Soldier> Soldiers;
 
         public Company()
         {
-            platoons = new List<Platoon>();
+            Soldiers = new List<Soldier>();
         }
 
-        public void AddPlatoon(Platoon platoon)
+        public void AddSoldier(Soldier newSoldier)
         {
-            platoons.Add(platoon);
+            Soldiers.Add(newSoldier);
         }
 
-        public List<Platoon> GetPlatoons()
+        public List<Soldier> GetSoldiers()
         {
-            return platoons;
+            return Soldiers;
         }
     }
 }

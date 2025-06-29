@@ -43,7 +43,6 @@
     <Compile Include="Constraint.cs" />
     <Compile Include="Deployment.cs" />
     <Compile Include="MIssion.cs" />
-    <Compile Include="Platoon.cs" />
     <Compile Include="Soldier.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

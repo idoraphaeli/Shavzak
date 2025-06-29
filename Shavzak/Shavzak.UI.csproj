@@ -52,6 +52,12 @@
     <Compile Include="BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewSoldier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewSoldier.Designer.cs">
+      <DependentUpon>NewSoldier.cs</DependentUpon>
+    </Compile>
     <Compile Include="SoldiersListForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,12 +69,6 @@
     </Compile>
     <Compile Include="StartForm.Designer.cs">
       <DependentUpon>StartForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NewSoldier.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewSoldier.Designer.cs">
-      <DependentUpon>NewSoldier.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

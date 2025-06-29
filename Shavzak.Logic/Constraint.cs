@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shavzak.Logic
 {
-    internal class Constraint
+    public class Constraint
     {
         public ConstraintType Type { get; set; }
 
@@ -23,8 +23,8 @@ namespace Shavzak.Logic
         public enum ConstraintType
         {
             None,               // אין אילוץ (deafult)
-            NoKitchen,          // איסור על מטבח
-            StaticOnly          // רק משימות סטטיות
+            No_Kitchen,          // איסור על מטבח
+            Static_Only          // רק משימות סטטיות
         }
     }
 }

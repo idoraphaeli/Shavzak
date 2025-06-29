@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shavzak.Logic
 {
-    internal class Deployment
+    public class Deployment
     {
         public Company Company { get; set; }
         public List<Task> Tasks { get; set; }

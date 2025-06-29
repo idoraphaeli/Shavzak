@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Shavzak.Logic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace Shavzak
 {
     public partial class StartForm : BaseForm
     {
+        private Deployment deployment = new Deployment(new Company(), DateTime.Now, DateTime.Now.AddDays(30));
+
         public StartForm()
         {
             InitializeComponent();
