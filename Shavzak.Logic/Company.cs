@@ -24,5 +24,16 @@ namespace Shavzak.Logic
         {
             return Soldiers;
         }
+
+        public bool RemoveSoldierByName(string fullName)
+        {
+            var soldier = Soldiers.FirstOrDefault(s => s.FullName.Equals(fullName, StringComparison.OrdinalIgnoreCase));
+            if (soldier != null)
+            {
+                Soldiers.Remove(soldier);
+                return true;
+            }
+            return false;
+        }
     }
 }

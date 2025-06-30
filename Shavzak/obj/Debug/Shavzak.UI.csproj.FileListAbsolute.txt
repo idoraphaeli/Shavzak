@@ -9,11 +9,12 @@ C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\o
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.BaseForm.resources
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.NewSoldier.resources
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.Properties.Resources.resources
-C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.SoldiersListForm.resources
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.StartForm.resources
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.UI.csproj.GenerateResource.cache
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.UI.csproj.CoreCompileInputs.cache
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.UI.csproj.Up2Date
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.exe
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.pdb
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.SoldiersList.resources
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.RemoveSoldier.resources
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.exe.config

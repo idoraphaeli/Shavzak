@@ -1,4 +1,6 @@
-﻿namespace Shavzak
+﻿using System.Windows.Forms;
+
+namespace Shavzak
 {
     partial class StartForm
     {
@@ -82,6 +84,7 @@
             this.showSoldiersListToolStripMenuItem.Name = "showSoldiersListToolStripMenuItem";
             this.showSoldiersListToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.showSoldiersListToolStripMenuItem.Text = "Show Soldiers List";
+            this.showSoldiersListToolStripMenuItem.Click += new System.EventHandler(this.showSoldiersListToolStripMenuItem_Click);
             // 
             // addNewSoldierToolStripMenuItem
             // 
@@ -97,6 +100,7 @@
             this.removeSoldierToolStripMenuItem.Name = "removeSoldierToolStripMenuItem";
             this.removeSoldierToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.removeSoldierToolStripMenuItem.Text = "Remove Soldier";
+            this.removeSoldierToolStripMenuItem.Click += new System.EventHandler(this.removeSoldierToolStripMenuItem_Click);
             // 
             // searchSoldierToolStripMenuItem
             // 
@@ -160,6 +164,7 @@
             this.showMissionsListToolStripMenuItem.Name = "showMissionsListToolStripMenuItem";
             this.showMissionsListToolStripMenuItem.Size = new System.Drawing.Size(200, 24);
             this.showMissionsListToolStripMenuItem.Text = "Show Missions List";
+            this.showMissionsListToolStripMenuItem.Click += new System.EventHandler(this.showMissionsListToolStripMenuItem_Click);
             // 
             // addNewMissionToolStripMenuItem
             // 
@@ -198,6 +203,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(664, 545);
             this.Controls.Add(this.SoldiersPhoto);
             this.Controls.Add(this.btnDownload);
             this.Controls.Add(this.btnBuildShavzak);

@@ -13,14 +13,11 @@ namespace Shavzak
 {
     public partial class StartForm : BaseForm
     {
-        private Deployment deployment = new Deployment(new Company(), DateTime.Now, DateTime.Now.AddDays(30));
-
         public StartForm()
         {
             InitializeComponent();
             Text = "Shavzak";
             this.Icon = new Icon("soldier-icon.ico");
-            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void StartForm_Resize(object sender, EventArgs e)
@@ -138,6 +135,22 @@ namespace Shavzak
             SoldiersPhoto.Height = (int)(this.ClientSize.Height / 2.9);
             SoldiersPhoto.Left = 0;
             SoldiersPhoto.Top = 30;
+        }
+
+        private void showMissionsListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void showSoldiersListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SoldiersList soldierList = new SoldiersList();
+            soldierList.ShowDialog(this);
+        }
+
+        private void removeSoldierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RemoveSoldier removeSoldier = new RemoveSoldier();
+            removeSoldier.ShowDialog(this);
         }
     }
 }

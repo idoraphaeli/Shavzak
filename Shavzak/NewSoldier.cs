@@ -30,6 +30,7 @@ namespace Shavzak
             Soldier newSoldier = new Soldier(fullName, selectedRole, selectedConstraint, PlatoonNum);
             
             MessageBox.Show($"Created soldier:\nName: {newSoldier.FullName}\nRole: {newSoldier.SoldierRole}\nConstraint: {newSoldier.Constraint} \n Platoon Number: {newSoldier.PlatoonNum}");
+            AppState.CurrentDeployment.Company.AddSoldier(newSoldier);
 
             this.Close();
         }

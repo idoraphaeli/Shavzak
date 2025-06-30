@@ -46,23 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppState.cs" />
     <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="RemoveSoldier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveSoldier.Designer.cs">
+      <DependentUpon>RemoveSoldier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoldiersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoldiersList.Designer.cs">
+      <DependentUpon>SoldiersList.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewSoldier.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NewSoldier.Designer.cs">
       <DependentUpon>NewSoldier.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SoldiersListForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SoldiersListForm.Designer.cs">
-      <DependentUpon>SoldiersListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="StartForm.cs">
       <SubType>Form</SubType>
@@ -89,8 +96,11 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="SoldiersListForm.resx">
-      <DependentUpon>SoldiersListForm.cs</DependentUpon>
+    <EmbeddedResource Include="RemoveSoldier.resx">
+      <DependentUpon>RemoveSoldier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoldiersList.resx">
+      <DependentUpon>SoldiersList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartForm.resx">
       <DependentUpon>StartForm.cs</DependentUpon>

@@ -131,7 +131,7 @@ namespace Shavzak
             this.button1.Location = new System.Drawing.Point(220, 421);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(240, 65);
-            this.button1.TabIndex = 7;
+            this.button1.TabIndex = 5;
             this.button1.Text = "Add Soldier";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -143,7 +143,7 @@ namespace Shavzak
             this.label4.Location = new System.Drawing.Point(120, 330);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(176, 26);
-            this.label4.TabIndex = 8;
+            this.label4.TabIndex = 5;
             this.label4.Text = "Platoon Number:";
             // 
             // comboBox3
@@ -157,7 +157,7 @@ namespace Shavzak
             this.comboBox3.Location = new System.Drawing.Point(320, 335);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(250, 24);
-            this.comboBox3.TabIndex = 9;
+            this.comboBox3.TabIndex = 4;
             // 
             // NewSoldier
             // 
