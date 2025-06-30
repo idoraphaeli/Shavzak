@@ -37,7 +37,6 @@ namespace Shavzak
             this.showSoldiersListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewSoldierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeSoldierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchSoldierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnMissions = new System.Windows.Forms.Button();
             this.btnBuildShavzak = new System.Windows.Forms.Button();
             this.btnDownload = new System.Windows.Forms.Button();
@@ -45,7 +44,6 @@ namespace Shavzak
             this.showMissionsListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewMissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeMissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SoldiersPhoto = new System.Windows.Forms.PictureBox();
             this.SoldierOptions.SuspendLayout();
             this.MissionOptions.SuspendLayout();
@@ -72,10 +70,9 @@ namespace Shavzak
             this.SoldierOptions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showSoldiersListToolStripMenuItem,
             this.addNewSoldierToolStripMenuItem,
-            this.removeSoldierToolStripMenuItem,
-            this.searchSoldierToolStripMenuItem});
+            this.removeSoldierToolStripMenuItem});
             this.SoldierOptions.Name = "contextMenuStrip1";
-            this.SoldierOptions.Size = new System.Drawing.Size(211, 128);
+            this.SoldierOptions.Size = new System.Drawing.Size(198, 76);
             this.SoldierOptions.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // showSoldiersListToolStripMenuItem
@@ -101,13 +98,6 @@ namespace Shavzak
             this.removeSoldierToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.removeSoldierToolStripMenuItem.Text = "Remove Soldier";
             this.removeSoldierToolStripMenuItem.Click += new System.EventHandler(this.removeSoldierToolStripMenuItem_Click);
-            // 
-            // searchSoldierToolStripMenuItem
-            // 
-            this.searchSoldierToolStripMenuItem.AutoSize = false;
-            this.searchSoldierToolStripMenuItem.Name = "searchSoldierToolStripMenuItem";
-            this.searchSoldierToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            this.searchSoldierToolStripMenuItem.Text = "Search Soldier";
             // 
             // btnMissions
             // 
@@ -153,10 +143,9 @@ namespace Shavzak
             this.MissionOptions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showMissionsListToolStripMenuItem,
             this.addNewMissionToolStripMenuItem,
-            this.removeMissionToolStripMenuItem,
-            this.searchToolStripMenuItem});
+            this.removeMissionToolStripMenuItem});
             this.MissionOptions.Name = "MissionOptions";
-            this.MissionOptions.Size = new System.Drawing.Size(201, 100);
+            this.MissionOptions.Size = new System.Drawing.Size(201, 76);
             this.MissionOptions.Opening += new System.ComponentModel.CancelEventHandler(this.missionOption_Opening);
             // 
             // showMissionsListToolStripMenuItem
@@ -171,19 +160,13 @@ namespace Shavzak
             this.addNewMissionToolStripMenuItem.Name = "addNewMissionToolStripMenuItem";
             this.addNewMissionToolStripMenuItem.Size = new System.Drawing.Size(200, 24);
             this.addNewMissionToolStripMenuItem.Text = "Add New Mission";
+            this.addNewMissionToolStripMenuItem.Click += new System.EventHandler(this.addNewMissionToolStripMenuItem_Click);
             // 
             // removeMissionToolStripMenuItem
             // 
             this.removeMissionToolStripMenuItem.Name = "removeMissionToolStripMenuItem";
             this.removeMissionToolStripMenuItem.Size = new System.Drawing.Size(200, 24);
             this.removeMissionToolStripMenuItem.Text = "Remove Mission";
-            // 
-            // searchToolStripMenuItem
-            // 
-            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(200, 24);
-            this.searchToolStripMenuItem.Text = "Search Mission";
-            this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
             // 
             // SoldiersPhoto
             // 
@@ -230,12 +213,10 @@ namespace Shavzak
         private System.Windows.Forms.ToolStripMenuItem showSoldiersListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewSoldierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removeSoldierToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem searchSoldierToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip MissionOptions;
         private System.Windows.Forms.ToolStripMenuItem showMissionsListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewMissionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removeMissionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.PictureBox SoldiersPhoto;
     }
 }

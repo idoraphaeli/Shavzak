@@ -6,33 +6,52 @@ using System.Threading.Tasks;
 
 namespace Shavzak.Logic
 {
-    internal class MIssion
+    public class Mission
     {
         public TaskType Type { get; set; }
-        public DateTime StartTime { get; set; }
-        public DateTime EndTime { get; set; }
+        public int HoursPerShift { get; set; }
+        public int SoldiersPerShift { get; set; }
+        public List<Shift> Shifts { get; set; }
 
-        public MIssion(TaskType type, DateTime startTime, DateTime endTime)
+        public Mission(TaskType type, int hoursPerShift, int soldiersPerShift)
         {
             Type = type;
-            StartTime = startTime;
-            EndTime = endTime;
+            HoursPerShift = hoursPerShift;
+            SoldiersPerShift = soldiersPerShift;
+            Shifts = GenerateShiftsForDay();
+        }
+
+        private List<Shift> GenerateShiftsForDay()
+        {
+            var shifts = new List<Shift>();
+            int totalHours = 24;
+            int numShifts = totalHours / HoursPerShift;
+
+            for (int i = 0; i < numShifts; i++)
+            {
+                TimeSpan start = TimeSpan.FromHours(i * HoursPerShift);
+                TimeSpan end = start + TimeSpan.FromHours(HoursPerShift);
+
+                shifts.Add(new Shift(start, end, SoldiersPerShift));
+            }
+
+            return shifts;
         }
 
         public override string ToString()
         {
-            return $"{Type} from {StartTime:HH:mm} to {EndTime:HH:mm}";
+            return $"{Type} - {Shifts.Count} shifts of {HoursPerShift}h, {SoldiersPerShift} soldier(s) each";
         }
 
         public enum TaskType
         {
-            Kitchen,         // מטבח
-            Patrol,          // סיור
-            Standby,         // כוננות
-            Guard,           // ש"ג
-            CommandCenter,   // חמ"ל
-            JointOperations, // שילוב זרועות
-            DutyOfficer      // קצין מוצב
+            Kitchen,              // מטבח
+            Patrol,               // סיור
+            Rapid_Response_Squad,   // כוננות
+            Guard,                // ש"ג
+            Command_Center,        // חמ"ל
+            Joint_Operations,      // שילוב זרועות
+            Duty_Officer           // קצין מוצב
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,7 +10,7 @@ namespace Shavzak.Logic
     public class Deployment
     {
         public Company Company { get; set; }
-        public List<Task> Tasks { get; set; }
+        public List<Mission> Missions { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
@@ -18,17 +19,17 @@ namespace Shavzak.Logic
             Company = company;
             StartDate = startDate;
             EndDate = endDate;
-            Tasks = new List<Task>();
+            Missions = new List<Mission>();
         }
 
-        public void AddTask(Task task)
+        public void AddMission(Mission mission)
         {
-            Tasks.Add(task);
+            Missions.Add(mission);
         }
 
         public override string ToString()
         {
-            return $"Deployment for company from {StartDate:dd/MM/yyyy} to {EndDate:dd/MM/yyyy}, {Tasks.Count} tasks assigned.";
+            return $"Deployment for company from {StartDate:dd/MM/yyyy} to {EndDate:dd/MM/yyyy}, {Missions.Count} tasks assigned.";
         }
     }
 }

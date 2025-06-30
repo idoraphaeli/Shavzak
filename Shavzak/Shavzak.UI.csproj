@@ -53,6 +53,12 @@
     <Compile Include="BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewMission.Designer.cs">
+      <DependentUpon>NewMission.cs</DependentUpon>
+    </Compile>
     <Compile Include="RemoveSoldier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
   <ItemGroup>
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewMission.resx">
+      <DependentUpon>NewMission.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewSoldier.resx">
       <DependentUpon>NewSoldier.cs</DependentUpon>
