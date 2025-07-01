@@ -123,6 +123,7 @@ namespace Shavzak
             this.btnBuildShavzak.TabIndex = 2;
             this.btnBuildShavzak.Text = "Build Shavzak!";
             this.btnBuildShavzak.UseVisualStyleBackColor = true;
+            this.btnBuildShavzak.Click += new System.EventHandler(this.btnBuildShavzak_Click);
             this.btnBuildShavzak.Resize += new System.EventHandler(this.StartForm_Resize);
             // 
             // btnDownload
@@ -176,7 +177,7 @@ namespace Shavzak
             this.SoldiersPhoto.Image = ((System.Drawing.Image)(resources.GetObject("SoldiersPhoto.Image")));
             this.SoldiersPhoto.Location = new System.Drawing.Point(0, 29);
             this.SoldiersPhoto.Name = "SoldiersPhoto";
-            this.SoldiersPhoto.Size = new System.Drawing.Size(663, 220);
+            this.SoldiersPhoto.Size = new System.Drawing.Size(554, 121);
             this.SoldiersPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SoldiersPhoto.TabIndex = 5;
             this.SoldiersPhoto.TabStop = false;

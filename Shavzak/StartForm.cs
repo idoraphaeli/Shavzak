@@ -139,45 +139,45 @@ namespace Shavzak
 
         private void showMissionsListToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MissionList missionList = new MissionList();
             if (AppState.CurrentDeployment.Missions.Count == 0)
             {
                 MessageBox.Show("No missions available. Please add missions first.");
                 return;
             }
+            MissionList missionList = new MissionList();
             missionList.ShowDialog(this);
         }
 
         private void showSoldiersListToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SoldiersList soldierList = new SoldiersList();
             if(AppState.CurrentDeployment.Company.GetSoldiers().Count == 0)
             {
                 MessageBox.Show("No soldiers available. Please add soldiers first.");
                 return;
             }
+            SoldiersList soldierList = new SoldiersList();
             soldierList.ShowDialog(this);
         }
 
         private void removeSoldierToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RemoveSoldier removeSoldier = new RemoveSoldier();
             if (AppState.CurrentDeployment.Company.GetSoldiers().Count == 0)
             {
                 MessageBox.Show("No soldiers available to remove. Please add soldiers first.");
                 return;
             }
+            RemoveSoldier removeSoldier = new RemoveSoldier();
             removeSoldier.ShowDialog(this);
         }
 
         private void searchSoldierToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RemoveSoldier removeSoldier = new RemoveSoldier();
             if (AppState.CurrentDeployment.Company.GetSoldiers().Count == 0)
             {
                 MessageBox.Show("No soldiers available to remove. Please add soldiers first.");
                 return;
             }
+            RemoveSoldier removeSoldier = new RemoveSoldier();
             removeSoldier.ShowDialog(this);
         }
 
@@ -189,13 +189,32 @@ namespace Shavzak
 
         private void removeMissionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RemoveMission removeMission = new RemoveMission();
             if (AppState.CurrentDeployment.Missions.Count == 0)
             {
                 MessageBox.Show("No missions available to remove. Please add missions first.");
                 return;
             }
+            RemoveMission removeMission = new RemoveMission();
             removeMission.ShowDialog(this);
+        }
+
+        private void btnBuildShavzak_Click(object sender, EventArgs e)
+        {
+            if (AppState.CurrentDeployment.Missions.Count == 0)
+            {
+                MessageBox.Show("No missions available. Please add missions first.");
+                return;
+            }
+            else if (AppState.CurrentDeployment.Company.GetSoldiers().Count == 0)
+            {
+                MessageBox.Show("No soldiers available. Please add soldiers first.");
+                return;
+            }
+            else
+            {
+                ShavzakOutput shavzakOutput = new ShavzakOutput();
+                shavzakOutput.ShowDialog(this);
+            }
         }
     }
 }

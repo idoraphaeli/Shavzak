@@ -77,6 +77,12 @@
     <Compile Include="RemoveSoldier.Designer.cs">
       <DependentUpon>RemoveSoldier.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShavzakOutput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShavzakOutput.Designer.cs">
+      <DependentUpon>ShavzakOutput.cs</DependentUpon>
+    </Compile>
     <Compile Include="SoldiersList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RemoveSoldier.resx">
       <DependentUpon>RemoveSoldier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShavzakOutput.resx">
+      <DependentUpon>ShavzakOutput.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SoldiersList.resx">
       <DependentUpon>SoldiersList.cs</DependentUpon>
