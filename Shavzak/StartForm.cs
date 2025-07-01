@@ -139,6 +139,13 @@ namespace Shavzak
 
         private void showMissionsListToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            MissionList missionList = new MissionList();
+            if (AppState.CurrentDeployment.Missions.Count == 0)
+            {
+                MessageBox.Show("No missions available. Please add missions first.");
+                return;
+            }
+            missionList.ShowDialog(this);
         }
 
         private void showSoldiersListToolStripMenuItem_Click(object sender, EventArgs e)
