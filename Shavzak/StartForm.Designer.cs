@@ -167,6 +167,7 @@ namespace Shavzak
             this.removeMissionToolStripMenuItem.Name = "removeMissionToolStripMenuItem";
             this.removeMissionToolStripMenuItem.Size = new System.Drawing.Size(200, 24);
             this.removeMissionToolStripMenuItem.Text = "Remove Mission";
+            this.removeMissionToolStripMenuItem.Click += new System.EventHandler(this.removeMissionToolStripMenuItem_Click);
             // 
             // SoldiersPhoto
             // 

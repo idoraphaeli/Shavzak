@@ -20,3 +20,4 @@ C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\o
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.exe.config
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.NewMission.resources
 C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.MissionList.resources
+C:\Users\ido01\Desktop\Ido private\Computer science\Shavzak\ShavzakGit\Shavzak\obj\Debug\Shavzak.RemoveMission.resources

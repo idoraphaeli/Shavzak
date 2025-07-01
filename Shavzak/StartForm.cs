@@ -186,5 +186,16 @@ namespace Shavzak
             NewMission newMission = new NewMission();
             newMission.ShowDialog(this);
         }
+
+        private void removeMissionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RemoveMission removeMission = new RemoveMission();
+            if (AppState.CurrentDeployment.Missions.Count == 0)
+            {
+                MessageBox.Show("No missions available to remove. Please add missions first.");
+                return;
+            }
+            removeMission.ShowDialog(this);
+        }
     }
 }

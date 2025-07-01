@@ -31,24 +31,24 @@ namespace Shavzak
         /// </summary>
         private void InitializeComponent()
         {
-            this.AddNewSoldierTitle = new System.Windows.Forms.Label();
+            this.RemoveSoldierTitle = new System.Windows.Forms.Label();
             this.SelectSoldierToRemoveLable = new System.Windows.Forms.Label();
             this.RemoveSoldierBtn = new System.Windows.Forms.Button();
             this.comboBoxRemoveSoldier = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // AddNewSoldierTitle
+            // RemoveSoldierTitle
             // 
-            this.AddNewSoldierTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.RemoveSoldierTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddNewSoldierTitle.AutoSize = true;
-            this.AddNewSoldierTitle.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddNewSoldierTitle.Location = new System.Drawing.Point(150, 15);
-            this.AddNewSoldierTitle.Name = "AddNewSoldierTitle";
-            this.AddNewSoldierTitle.Size = new System.Drawing.Size(249, 34);
-            this.AddNewSoldierTitle.TabIndex = 0;
-            this.AddNewSoldierTitle.Text = "Remove Soldier";
-            this.AddNewSoldierTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RemoveSoldierTitle.AutoSize = true;
+            this.RemoveSoldierTitle.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RemoveSoldierTitle.Location = new System.Drawing.Point(150, 15);
+            this.RemoveSoldierTitle.Name = "RemoveSoldierTitle";
+            this.RemoveSoldierTitle.Size = new System.Drawing.Size(249, 34);
+            this.RemoveSoldierTitle.TabIndex = 0;
+            this.RemoveSoldierTitle.Text = "Remove Soldier";
+            this.RemoveSoldierTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SelectSoldierToRemoveLable
             // 
@@ -85,11 +85,11 @@ namespace Shavzak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 253);
+            this.ClientSize = new System.Drawing.Size(450, 300);
             this.Controls.Add(this.comboBoxRemoveSoldier);
             this.Controls.Add(this.RemoveSoldierBtn);
             this.Controls.Add(this.SelectSoldierToRemoveLable);
-            this.Controls.Add(this.AddNewSoldierTitle);
+            this.Controls.Add(this.RemoveSoldierTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MinimumSize = new System.Drawing.Size(450, 300);
             this.Name = "RemoveSoldier";
@@ -102,7 +102,7 @@ namespace Shavzak
 
         #endregion
 
-        private System.Windows.Forms.Label AddNewSoldierTitle;
+        private System.Windows.Forms.Label RemoveSoldierTitle;
         private System.Windows.Forms.Label SelectSoldierToRemoveLable;
         private System.Windows.Forms.Button RemoveSoldierBtn;
         private ComboBox comboBoxRemoveSoldier;

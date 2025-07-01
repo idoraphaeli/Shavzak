@@ -42,12 +42,12 @@ namespace Shavzak
 
             if (success)
             {
-                MessageBox.Show("soldier removed successfully.");
+                MessageBox.Show("Soldier removed successfully.");
                 this.Close();
             }
             else
             {
-                MessageBox.Show("soldier not found.");
+                MessageBox.Show("Soldier not found.");
             }
         }
     }
