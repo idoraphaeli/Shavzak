@@ -14,6 +14,8 @@ namespace Shavzak
         public Role SoldierRole { get; set; }
         public ConstraintType Constraint { get; set; }
         public PlatoonNumber PlatoonNum { get; set; }
+        public Dictionary<Mission.TaskType, int> TaskTypeCounts { get; set; } = new Dictionary<Mission.TaskType, int>();
+        public int TotalMissionsAssigned => TaskTypeCounts.Values.Sum();
 
         public Soldier(string fullName, Role role = Role.Fighter, ConstraintType constraint = ConstraintType.None, PlatoonNumber platoonNumber = PlatoonNumber.Headquarters)
         {

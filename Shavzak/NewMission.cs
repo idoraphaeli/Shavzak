@@ -31,10 +31,12 @@ namespace Shavzak
             Shavzak.Logic.Mission.TaskType taskType = (Shavzak.Logic.Mission.TaskType)comboBox1.SelectedItem;
             int hourPerShift = int.Parse(comboBox2.SelectedItem.ToString());
             int soldierPerShift = int.Parse(comboBox3.SelectedItem.ToString());
+            string selected = comboBoxIsStatic.SelectedItem.ToString();
+            bool isStatic = selected == "Yes" ? true : false;
 
-            Mission mission = new Mission(taskType, hourPerShift, soldierPerShift);
+            Mission mission = new Mission(taskType, hourPerShift, soldierPerShift, isStatic);
 
-            MessageBox.Show($"Created mission:\nMission: {mission.Type}\nHour Per Shift: {mission.HoursPerShift}\nSoldier Per Shift: {mission.SoldiersPerShift}");
+            MessageBox.Show($"Created mission:\nMission: {mission.Type}\nHour Per Shift: {mission.HoursPerShift}\nSoldier Per Shift: {mission.SoldiersPerShift}\nIs Static: {mission.IsStatic}");
             AppState.CurrentDeployment.AddMission(mission);
 
             this.Close();

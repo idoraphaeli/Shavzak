@@ -40,6 +40,8 @@ namespace Shavzak
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.labelIsStatic = new System.Windows.Forms.Label();
+            this.comboBoxIsStatic = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // AddNewMissionLabel
@@ -57,7 +59,7 @@ namespace Shavzak
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(120, 150);
+            this.label1.Location = new System.Drawing.Point(120, 120);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 26);
             this.label1.TabIndex = 6;
@@ -67,7 +69,7 @@ namespace Shavzak
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(120, 240);
+            this.label2.Location = new System.Drawing.Point(120, 200);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(166, 26);
             this.label2.TabIndex = 5;
@@ -77,7 +79,7 @@ namespace Shavzak
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(120, 330);
+            this.label3.Location = new System.Drawing.Point(120, 280);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(176, 26);
             this.label3.TabIndex = 4;
@@ -86,7 +88,7 @@ namespace Shavzak
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.Location = new System.Drawing.Point(220, 421);
+            this.button1.Location = new System.Drawing.Point(219, 435);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(240, 65);
             this.button1.TabIndex = 4;
@@ -106,7 +108,7 @@ namespace Shavzak
             Shavzak.Logic.Mission.TaskType.Duty_Officer};
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(324, 153);
+            this.comboBox1.Location = new System.Drawing.Point(324, 120);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(191, 24);
             this.comboBox1.TabIndex = 1;
@@ -122,7 +124,7 @@ namespace Shavzak
             "8",
             "12",
             "24"});
-            this.comboBox2.Location = new System.Drawing.Point(324, 240);
+            this.comboBox2.Location = new System.Drawing.Point(324, 200);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(191, 24);
             this.comboBox2.TabIndex = 2;
@@ -137,16 +139,39 @@ namespace Shavzak
             "4",
             "5",
             "6"});
-            this.comboBox3.Location = new System.Drawing.Point(324, 329);
+            this.comboBox3.Location = new System.Drawing.Point(324, 280);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(193, 24);
             this.comboBox3.TabIndex = 3;
+            // 
+            // labelIsStatic
+            // 
+            this.labelIsStatic.AutoSize = true;
+            this.labelIsStatic.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIsStatic.Location = new System.Drawing.Point(120, 360);
+            this.labelIsStatic.Name = "labelIsStatic";
+            this.labelIsStatic.Size = new System.Drawing.Size(96, 26);
+            this.labelIsStatic.TabIndex = 7;
+            this.labelIsStatic.Text = "Is Static:";
+            // 
+            // comboBoxIsStatic
+            // 
+            this.comboBoxIsStatic.FormattingEnabled = true;
+            this.comboBoxIsStatic.Items.AddRange(new object[] {
+            "No",
+            "Yes"});
+            this.comboBoxIsStatic.Location = new System.Drawing.Point(324, 360);
+            this.comboBoxIsStatic.Name = "comboBoxIsStatic";
+            this.comboBoxIsStatic.Size = new System.Drawing.Size(193, 24);
+            this.comboBoxIsStatic.TabIndex = 8;
             // 
             // NewMission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(664, 545);
+            this.Controls.Add(this.comboBoxIsStatic);
+            this.Controls.Add(this.labelIsStatic);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
@@ -173,5 +198,7 @@ namespace Shavzak
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
+        private Label labelIsStatic;
+        private ComboBox comboBoxIsStatic;
     }
 }

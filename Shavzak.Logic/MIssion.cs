@@ -9,16 +9,18 @@ namespace Shavzak.Logic
     public class Mission
     {
         public TaskType Type { get; set; }
+        public bool IsStatic { get; set; }
         public int HoursPerShift { get; set; }
         public int SoldiersPerShift { get; set; }
         public List<Shift> Shifts { get; set; }
 
-        public Mission(TaskType type, int hoursPerShift, int soldiersPerShift)
+        public Mission(TaskType type, int hoursPerShift, int soldiersPerShift, bool isStatic)
         {
             Type = type;
             HoursPerShift = hoursPerShift;
             SoldiersPerShift = soldiersPerShift;
             Shifts = GenerateShiftsForDay();
+            IsStatic = isStatic;
         }
 
         private List<Shift> GenerateShiftsForDay()

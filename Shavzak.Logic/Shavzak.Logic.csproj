@@ -43,6 +43,7 @@
     <Compile Include="Constraint.cs" />
     <Compile Include="Deployment.cs" />
     <Compile Include="MIssion.cs" />
+    <Compile Include="Scheduler.cs" />
     <Compile Include="Shift.cs" />
     <Compile Include="Soldier.cs" />
   </ItemGroup>
