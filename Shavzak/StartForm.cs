@@ -220,12 +220,12 @@ namespace Shavzak
 
         private void TryOpenShavzakOutput()
         {
-            int missingCount = Scheduler.AssignSoldiers(AppState.CurrentDeployment);
+            bool missingCount = Scheduler.AssignSoldiers(AppState.CurrentDeployment);
 
-            if (missingCount > 0)
+            if (!missingCount)
             {
                 MessageBox.Show(
-                    $"Scheduling failed: {missingCount} soldier(s) missing to complete the deployment.",
+                    $"Scheduling failed: soldier(s) missing to complete the deployment.",
                     "Insufficient Soldiers",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning

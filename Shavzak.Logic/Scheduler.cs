@@ -11,21 +11,23 @@ namespace Shavzak.Logic
     {
         private const int MinRestHours = 8;
 
-        public static int AssignSoldiers(Deployment deployment)
+        public static bool AssignSoldiers(Deployment deployment)
         {
-            int missing = CalculateMissingSoldiers(deployment, minRestHours: 8);
+            bool missing = HasSufficientSoldiers(deployment);
 
-            if (missing > 0)
+            if (!missing)
             {
                 return missing;
             }
+
+            List<(Soldier soldier, Shift shift)> scheduled = new List<(Soldier, Shift)>();
 
             foreach (var mission in deployment.Missions)
             {
                 foreach (var shift in mission.Shifts)
                 {
                     var availableSoldiers = deployment.Company.GetSoldiers()
-                        .Where(s => SoldierMeetsConstraints(s, mission))
+                        .Where(s => SoldierMeetsConstraints(s, mission) && IsAvailable(s, shift, scheduled, MinRestHours))
                         .OrderBy(s => s.TotalMissionsAssigned)
                         .ThenBy(s => s.TaskTypeCounts.ContainsKey(mission.Type) ? s.TaskTypeCounts[mission.Type] : 0)
                         .Take(mission.SoldiersPerShift)
@@ -46,70 +48,68 @@ namespace Shavzak.Logic
             return missing;
         }
 
-        private static bool IsAvailable(Soldier soldier, Shift newShift, List<(Soldier soldier, Shift shift)> scheduled, int minRestHours)
+        private static bool IsAvailable(Soldier soldier, Shift currentShift, List<(Soldier soldier, Shift shift)> scheduled, int minRestHours)
         {
-            foreach (var (assignedSoldier, shift) in scheduled)
-            {
-                if (assignedSoldier != soldier)
-                    continue;
+            var soldierShifts = scheduled
+                .Where(s => s.soldier == soldier)
+                .Select(s => s.shift);
 
-                if (shift.OverlapsWith(newShift))
+            foreach (var previous in soldierShifts)
+            {
+                if (ShiftsOverlap(previous.StartTime, previous.EndTime, currentShift.StartTime, currentShift.EndTime))
                     return false;
 
-                var gap = (newShift.StartTime - shift.EndTime).Duration();
-                if (gap.TotalHours < minRestHours)
+                double restHours = (currentShift.StartTime - previous.EndTime).TotalHours;
+
+                if (restHours < 0)
+                    restHours += 24;
+
+                if (restHours < minRestHours)
                     return false;
             }
+
             return true;
         }
 
-        public static int CalculateMissingSoldiers(Deployment deployment, int minRestHours)
+        private static bool ShiftsOverlap(TimeSpan start1, TimeSpan end1, TimeSpan start2, TimeSpan end2)
+        {
+            bool isFullDay1 = start1 == end1;
+
+            if (isFullDay1)
+                return true;
+
+            bool overlaps =
+                (start1 < end1 && start2 < end2 && start1 < end2 && start2 < end1) ||
+                (start1 > end1 && (start2 < end1 || start2 > start1)) ||
+                (start2 > end2 && (start1 < end2 || start1 > start2));
+
+            return overlaps;
+        }
+
+
+        public static bool HasSufficientSoldiers(Deployment deployment)
         {
             List<Soldier> allSoldiers = deployment.Company.GetSoldiers();
             List<(Soldier soldier, Shift shift)> scheduled = new List<(Soldier, Shift)>();
-            int totalMissing = 0;
 
             foreach (var mission in deployment.Missions)
             {
                 foreach (var shift in mission.Shifts)
                 {
                     var available = allSoldiers
-                        .Where(s => SoldierMeetsConstraints(s, mission) && IsAvailable(s, shift, scheduled, minRestHours))
+                        .Where(s => SoldierMeetsConstraints(s, mission) && IsAvailable(s, shift, scheduled, MinRestHours))
                         .ToList();
 
                     if (available.Count < mission.SoldiersPerShift)
+                        return false;
+
+                    foreach (var soldier in available.Take(mission.SoldiersPerShift))
                     {
-                        totalMissing += (mission.SoldiersPerShift - available.Count);
-                    }
-                    else
-                    {
-                        foreach (var soldier in available.Take(mission.SoldiersPerShift))
-                        {
-                            scheduled.Add((soldier, shift));
-                        }
+                        scheduled.Add((soldier, shift));
                     }
                 }
             }
 
-            return totalMissing;
-        }
-
-        private static bool IsAvailable(Soldier soldier, Shift newShift, List<(Soldier soldier, Shift shift)> scheduled)
-        {
-            foreach (var (assignedSoldier, shift) in scheduled)
-            {
-                if (assignedSoldier != soldier)
-                    continue;
-
-                var gapBefore = newShift.StartTime - shift.EndTime;
-                var gapAfter = shift.StartTime - newShift.EndTime;
-
-                if (shift.OverlapsWith(newShift) || gapBefore.TotalHours < MinRestHours && gapBefore.TotalHours >= 0 ||
-                    gapAfter.TotalHours < MinRestHours && gapAfter.TotalHours >= 0)
-                {
-                    return false;
-                }
-            }
             return true;
         }
 
