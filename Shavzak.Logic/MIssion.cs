@@ -31,8 +31,11 @@ namespace Shavzak.Logic
 
             for (int i = 0; i < numShifts; i++)
             {
-                TimeSpan start = TimeSpan.FromHours(i * HoursPerShift);
+                TimeSpan start = TimeSpan.FromHours(6 + i * HoursPerShift);
                 TimeSpan end = start + TimeSpan.FromHours(HoursPerShift);
+
+                if (end.TotalHours >= 24)
+                    end = end.Subtract(TimeSpan.FromHours(24));
 
                 shifts.Add(new Shift(start, end, SoldiersPerShift));
             }
