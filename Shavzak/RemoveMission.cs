@@ -16,7 +16,6 @@ namespace Shavzak
         public RemoveMission()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterParent;
         }
 
         private void RemoveMission_Load(object sender, EventArgs e)
@@ -28,6 +27,7 @@ namespace Shavzak
             comboBoxRemoveMission.DisplayMember = "Type";
             this.comboBoxRemoveMission.Size = new System.Drawing.Size(160, 24);
             this.MaximizeBox = false;
+            this.CenterToScreen();
         }
 
         private void btnRemove_Click(object sender, EventArgs e)

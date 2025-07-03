@@ -15,7 +15,6 @@ namespace Shavzak
         public RemoveSoldier()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterParent;
         }
 
         private void RemoveSoldier_Load(object sender, EventArgs e)
@@ -25,6 +24,7 @@ namespace Shavzak
             this.comboBoxRemoveSoldier.DataSource = null;
             this.comboBoxRemoveSoldier.DataSource = AppState.CurrentDeployment.Company.GetSoldiers();
             this.MaximizeBox = false;
+            this.CenterToScreen();
         }
 
         private void RemoveSoldierBtn_Click(object sender, EventArgs e)

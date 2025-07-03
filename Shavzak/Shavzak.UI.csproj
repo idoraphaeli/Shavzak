@@ -83,6 +83,12 @@
     <Compile Include="ShavzakOutput.Designer.cs">
       <DependentUpon>ShavzakOutput.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShowStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowStatus.Designer.cs">
+      <DependentUpon>ShowStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="SoldiersList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ShavzakOutput.resx">
       <DependentUpon>ShavzakOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowStatus.resx">
+      <DependentUpon>ShowStatus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SoldiersList.resx">
       <DependentUpon>SoldiersList.cs</DependentUpon>

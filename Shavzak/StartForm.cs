@@ -13,6 +13,8 @@ namespace Shavzak
 {
     public partial class StartForm : BaseForm
     {
+        public int shavzakWasClicked { get; set; } = 0;
+
         public StartForm()
         {
             InitializeComponent();
@@ -214,7 +216,20 @@ namespace Shavzak
             {
                 ShavzakOutput shavzakOutput = new ShavzakOutput();
                 shavzakOutput.ShowDialog(this);
+                shavzakWasClicked++;
             }
+        }
+
+        private void btnDownload_Click(object sender, EventArgs e)
+        {
+            if (shavzakWasClicked == 0)
+            {
+                MessageBox.Show("No schedule has been created yet.\n" +
+                                "Please generate a schedule before viewing the soldiers' task status.");
+                return;
+            }
+            ShowStatus showStatus = new ShowStatus();
+            showStatus.ShowDialog(this);
         }
     }
 }

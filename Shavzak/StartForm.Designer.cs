@@ -135,8 +135,9 @@ namespace Shavzak
             this.btnDownload.Name = "btnDownload";
             this.btnDownload.Size = new System.Drawing.Size(464, 50);
             this.btnDownload.TabIndex = 3;
-            this.btnDownload.Text = "Download Status";
+            this.btnDownload.Text = "Show Status";
             this.btnDownload.UseVisualStyleBackColor = true;
+            this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
             // 
             // MissionOptions
             // 
