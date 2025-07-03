@@ -29,8 +29,7 @@ namespace Shavzak
         private void ShavzakOutput_Load(object sender, EventArgs e)
         {
             List<ScheduleRow> rows = new List<ScheduleRow>();
-            Scheduler.AssignSoldiers(AppState.CurrentDeployment);
-
+            
             foreach (var mission in AppState.CurrentDeployment.Missions)
             {
                 foreach (var shift in mission.Shifts)

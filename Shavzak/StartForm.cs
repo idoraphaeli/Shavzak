@@ -214,10 +214,28 @@ namespace Shavzak
             }
             else
             {
-                ShavzakOutput shavzakOutput = new ShavzakOutput();
-                shavzakOutput.ShowDialog(this);
-                shavzakWasClicked++;
+                TryOpenShavzakOutput();
             }
+        }
+
+        private void TryOpenShavzakOutput()
+        {
+            int missingCount = Scheduler.AssignSoldiers(AppState.CurrentDeployment);
+
+            if (missingCount > 0)
+            {
+                MessageBox.Show(
+                    $"Scheduling failed: {missingCount} soldier(s) missing to complete the deployment.",
+                    "Insufficient Soldiers",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+                return;
+            }
+
+            ShavzakOutput outputForm = new ShavzakOutput();
+            outputForm.ShowDialog(this);
+            shavzakWasClicked++;
         }
 
         private void btnDownload_Click(object sender, EventArgs e)

@@ -25,5 +25,20 @@ namespace Shavzak.Logic
         {
             return $"Shift from {StartTime:hh\\:mm} to {EndTime:hh\\:mm} ({RequiredSoldiers} required)";
         }
+
+        public bool OverlapsWith(Shift other)
+        {
+            TimeSpan thisStart = this.StartTime;
+            TimeSpan thisEnd = this.EndTime;
+            TimeSpan otherStart = other.StartTime;
+            TimeSpan otherEnd = other.EndTime;
+
+            if (thisEnd <= thisStart)
+                thisEnd = thisEnd.Add(TimeSpan.FromDays(1));
+            if (otherEnd <= otherStart)
+                otherEnd = otherEnd.Add(TimeSpan.FromDays(1));
+
+            return thisStart < otherEnd && otherStart < thisEnd;
+        }
     }
 }
