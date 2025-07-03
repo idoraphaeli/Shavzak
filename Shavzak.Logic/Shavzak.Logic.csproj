@@ -46,6 +46,7 @@
     <Compile Include="Scheduler.cs" />
     <Compile Include="Shift.cs" />
     <Compile Include="Soldier.cs" />
+    <Compile Include="Validation.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
