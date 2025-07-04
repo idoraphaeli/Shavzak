@@ -22,7 +22,11 @@ namespace Shavzak.Logic
 
             List<(Soldier soldier, Shift shift)> scheduled = new List<(Soldier, Shift)>();
 
-            foreach (var mission in deployment.Missions)
+            var orderedMissions = deployment.Missions
+                .OrderByDescending(m => m.HoursPerShift)
+                .ToList();
+
+            foreach (var mission in orderedMissions)
             {
                 foreach (var shift in mission.Shifts)
                 {
@@ -41,6 +45,7 @@ namespace Shavzak.Logic
                             soldier.TaskTypeCounts[mission.Type] = 0;
 
                         soldier.TaskTypeCounts[mission.Type]++;
+                        scheduled.Add((soldier, shift));
                     }
                 }
             }
@@ -54,17 +59,21 @@ namespace Shavzak.Logic
                 .Where(s => s.soldier == soldier)
                 .Select(s => s.shift);
 
-            foreach (var previous in soldierShifts)
+            foreach (var soldierShift in soldierShifts)
             {
-                if (ShiftsOverlap(previous.StartTime, previous.EndTime, currentShift.StartTime, currentShift.EndTime))
+                if (ShiftsOverlap(soldierShift.StartTime, soldierShift.EndTime, currentShift.StartTime, currentShift.EndTime))
                     return false;
 
-                double restHours = (currentShift.StartTime - previous.EndTime).TotalHours;
+                double restBefore = (currentShift.StartTime - soldierShift.EndTime).TotalHours;
+                if (restBefore < 0)
+                    restBefore += 24;
+                if (restBefore < minRestHours)
+                    return false;
 
-                if (restHours < 0)
-                    restHours += 24;
-
-                if (restHours < minRestHours)
+                double restAfter = (soldierShift.StartTime - currentShift.EndTime).TotalHours;
+                if (restAfter < 0)
+                    restAfter += 24;
+                if (restAfter < minRestHours)
                     return false;
             }
 
@@ -98,6 +107,9 @@ namespace Shavzak.Logic
                 {
                     var available = allSoldiers
                         .Where(s => SoldierMeetsConstraints(s, mission) && IsAvailable(s, shift, scheduled, MinRestHours))
+                        .OrderBy(s => s.TotalMissionsAssigned)
+                        .ThenBy(s => s.TaskTypeCounts.ContainsKey(mission.Type) ? s.TaskTypeCounts[mission.Type] : 0)
+                        .Take(mission.SoldiersPerShift)
                         .ToList();
 
                     if (available.Count < mission.SoldiersPerShift)
@@ -119,6 +131,12 @@ namespace Shavzak.Logic
                 return false;
 
             if (soldier.Constraint == ConstraintType.Static_Only && !mission.IsStatic)
+                return false;
+
+            if (!(mission.Type == Mission.TaskType.Duty_Officer && 
+                (soldier.SoldierRole != Soldier.Role.Platoon_Commander ||
+                 soldier.SoldierRole != Soldier.Role.Deputy_Company_Commander ||
+                 soldier.SoldierRole != Soldier.Role.Company_Commander))) 
                 return false;
 
             if ((soldier.SoldierRole == Soldier.Role.Company_Commander ||
